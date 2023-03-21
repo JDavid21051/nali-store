@@ -1,0 +1,8 @@
+<p class="text-xl">
+  Listado de productos
+</p>
+<div class="grid">
+  <div *ngFor="let product of productList" class="product--card sm:col-2 md:col-3 lg:col-4 xl:col-6 h-15rem">
+    {{product.name}}
+  </div>
+</div>
