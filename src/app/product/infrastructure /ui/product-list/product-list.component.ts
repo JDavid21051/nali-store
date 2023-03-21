@@ -31,8 +31,9 @@ export class ProductListComponent implements OnInit {
 
   formatProductList(): void {
     this.productList.forEach((product: ProductInterface, index: number) => {
-      product.image_alt = `https://picsum.photos/id/${index}/240/320`;
-      product.image_url = `https://picsum.photos/id/${index}/240/320`;
+      index++;
+      product.image_alt = 'https://picsum.photos/id/' + index + '0/280/250';
+      product.image_url = 'https://picsum.photos/id/' + index + '0/280/250';
       product.image_type = 0;
     });
     console.log(this.productList);

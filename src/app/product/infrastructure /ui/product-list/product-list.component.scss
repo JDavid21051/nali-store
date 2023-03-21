@@ -1,3 +1,30 @@
-.product--card {
-  background-color: blanchedalmond;
+.product--grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  & h4, p, label {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  & .product--card {
+    height: 20rem;
+    & .img-content {
+      & img {
+        width: 100% !important;
+        height: 70% !important;
+        border-radius: 16px 16px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .product--grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 12px;
+  }
+
 }
