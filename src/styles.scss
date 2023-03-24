@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --white: #FFF;
+
+  // product
+  --rating--bg: #83838385;
+}
+
+app-root {
+  & app-product-list {
+    & ngx-star-rating label.star {
+      font-size: 1.5rem !important;
+      padding: 10px 10px 10px 0 !important;
+      cursor: pointer !important;
+      color: #fff !important;
+    }
+  }
+
+  input.star-1:checked ~ label.star:before {
+    color: #8a9dc7 !important;
+  }
+  input.star-2:checked ~ label.star:before {
+    color: #5a72a8 !important;
+  }
+  input.star-3:checked ~ label.star:before {
+    color: #2b447e !important;
+  }
+  input.star-4:checked ~ label.star:before {
+    color: #0d2354 !important;
+  }
+  input.star-5:checked ~ label.star:before {
+    color: #061d50 !important;
+  }
+
+}
+
