@@ -12,11 +12,13 @@ import {
   ProductListRepository,
   ProductListComponent,
 } from './product';
+import { ProductFormComponent } from './product/infrastructure /ui/product-form/product-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
+    ProductFormComponent,
   ],
   imports: [
     BrowserModule,
