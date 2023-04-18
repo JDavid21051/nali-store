@@ -23,7 +23,6 @@ export class ProductListComponent implements OnInit {
       next: (response: HttpResponse<ProductInterface[]>) => {
         if (response.status === 200 && response.body !== null) {
           this.productList = response.body;
-          console.log(this.productList);
           this.formatProductList();
         }
       },
